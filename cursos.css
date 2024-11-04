@@ -1,0 +1,23 @@
+body{
+    background-image: url('images.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+h1{
+    color: gold;
+}
+ul{
+    color: gold;
+    border: 6px solid black;
+    border-radius: 16px;
+}
+li a{
+    color: gold;
+    margin-left: 15px;
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+}

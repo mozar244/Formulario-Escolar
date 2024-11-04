@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: beige;
+    text-align: center;
+    background-image: url('images.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+p {
+    font-size: 2em;
+    color: gold;
+}
+
+.materias-list {
+    list-style-type: none;
+    padding: 0;
+    margin-left: 20px auto;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+.materias-list li {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: gold;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+}

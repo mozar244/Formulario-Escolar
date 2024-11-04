@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="introducao.css">
+    <link rel="icon" type="image/png" href="745a1013a7157526e4ece80d08697ce9.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- Splash screen -->
+    <div id="splashScreen">
+        <h1>SOL PUC</h1>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">SOL PUC</div>
+            <ul class="nav-links">
+                <li><a href="introducao.html">Home</a></li>
+                <li><a href="cursos.html">Cursos</a></li>
+                <li><a href="https://www.primecursos.com.br/lectures/">Mini-cursos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Bem Vindo!</h1>
+
+        <form action="https://www.google.com/search" method="GET" target="_blank">
+            <input type="text" id="searchBar" name="q" placeholder="Digite aqui sua pesquisa...">
+            <button type="submit">Pesquisar</button>
+        </form>
+        
+        <button id="menuButton">Escolha entre as alternativas</button>
+        <ul id="menuOptions" class="hidden">
+            <li><a href="https://www.youtube.com" target="_blank">Youtube</a></li>
+            <li><a href="login.html" target="_blank">Login</a></li>
+            <li><a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" target="_blank">Wikipedia</a></li>
+            <li><a href="http://localhost:4200/" target="_blank">Nosso site desenvolvido em angular</a></li>
+        </ul>
+    </main>
+    <script src="introducao.js"></script>
+</body>
+</html>

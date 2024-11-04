@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de Matérias do Aluno</title>
+    <link rel="stylesheet" href="MenuMaterias.css">
+    <link rel="icon" type="image/png" href="745a1013a7157526e4ece80d08697ce9.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <p>Abaixo encontram-se todas as matérias ao qual o aluno está matriculado:</p>
+    
+    <!-- Lista de Matérias -->
+    <ul id="materias-list" class="materias-list"></ul>
+
+    <script>
+        // Suponha que esse seja o array de matérias ao qual o aluno está matriculado
+        const materiasMatriculadas = [
+            "Arquitetura de Computadores II",
+            "Interface Homem-Maquina",
+            "Compiladores",
+            "Projeto de Componentes e Circuitos",
+            "Projeto e Analise de Algoritmos",
+            "Estrutura de Dados II",
+        ];
+
+        // Função para carregar as matérias dinamicamente
+        $(document).ready(function() {
+            const listaMaterias = $('#materias-list');
+
+            // Adiciona cada matéria à lista
+            materiasMatriculadas.forEach(function(materia) {
+                listaMaterias.append('<li>' + materia + '</li>');
+            });
+        });
+    </script>
+</body>
+</html>

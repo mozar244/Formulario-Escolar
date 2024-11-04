@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inclusão e Histórico do Aluno</title>
+    <link rel="stylesheet" href="inclusao_Historico.css">
+    <link rel="icon" type="image/png" href="745a1013a7157526e4ece80d08697ce9.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Inclusão e Historico de materias</h1>
+        
+        <!-- Botões de controle -->
+        <div class="buttons">
+            <button id="btnInclusao">Inclusão de Matérias</button>
+            <button id="btnHistorico">Histórico de Matérias</button>
+        </div>
+        
+        <!-- Iframes para inclusão e histórico -->
+        <div class="iframes">
+            <iframe id="iframeInclusao" src="inclusao.html" style="display: none;"></iframe>
+            <iframe id="iframeHistorico" src="historico.html" style="display: none;"></iframe>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            // Mostrar iframe de inclusão quando o botão for clicado
+            $('#btnInclusao').click(function() {
+                $('#iframeInclusao').show();
+                $('#iframeHistorico').hide(); // Esconder o outro iframe
+            });
+
+            // Mostrar iframe de histórico quando o botão for clicado
+            $('#btnHistorico').click(function() {
+                $('#iframeHistorico').show();
+                $('#iframeInclusao').hide(); // Esconder o outro iframe
+            });
+        });
+    </script>
+</body>
+</html>
